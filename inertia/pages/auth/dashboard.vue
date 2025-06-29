@@ -43,7 +43,7 @@ function goToCheckout() {
 }
 function buyNow(product: MenuItem) {
   localStorage.setItem('checkoutItem', JSON.stringify({ ...product, quantity: 1 }))
-  router.visit('/checkout')
+  router.visit('/checkout')     
 }
 
 // Computed property untuk memfilter menuItems berdasarkan kategori aktif
